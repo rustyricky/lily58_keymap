@@ -241,11 +241,11 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
 		} else {
 			tap_code_delay(KC_VOLD, 10);
 		}
-	} else if (index == 1) { /* Second encoder */
+	} else { /* Second encoder */
 		if (clockwise) {
-			tap_code(KC_MNXT);
+			tap_code_delay(KC_MNXT, 10);
 		} else {
-			tap_code(KC_MPRV);
+			tap_code_delay(KC_MPRV, 10);
 		}
 	}
 
